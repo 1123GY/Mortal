@@ -189,24 +189,24 @@ function checkUserName() {
 }
 
 //添加用户检查电子邮箱是否存在
-function checkUserEmail() {
+function checkuserQQ() {
     var result;
     $.ajax({
         async: false,//同步，待请求完毕后再执行后面的代码
         type: "POST",
-        url: '/admin/user/checkUserEmail',
+        url: '/admin/user/checkuserQQ',
         contentType: "application/x-www-form-urlencoded; charset=utf-8",
-        data: {"email": $("#userEmail").val(), "id": $("#userId").val()},
+        data: {"email": $("#userQQ").val(), "id": $("#userId").val()},
         dataType: "json",
         success: function (data) {
             //用户名存在
             if(data.code==1) {
-                $("#userEmailTips").html(data.msg);
+                $("#userQQTips").html(data.msg);
                 result=1;
             }
             //用户名不存在
             if(data.code==0) {
-                $("#userEmailTips").html(data.msg);
+                $("#userQQTips").html(data.msg);
                 result=0;
             }
         },
@@ -232,8 +232,8 @@ layui.use(['form', 'layedit', 'laydate'], function () {
                 return "用户名已存在";
             }
         },
-        userEmail: function () {
-            if(checkUserEmail()==1) {
+        userQQ: function () {
+            if(checkuserQQ()==1) {
                 return "电子邮箱已存在";
             }
         }

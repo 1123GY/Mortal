@@ -16,7 +16,7 @@ import java.util.List;
 
 /**
  * 文章的controller
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 @Controller
 public class ArticleController {

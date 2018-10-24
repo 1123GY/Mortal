@@ -18,7 +18,7 @@
             <div class="feed-about">
                 <div class="about-main">
                     <div class="about-img">
-                        <img src="${options.optionAboutsiteAvatar}"
+                        <img src="${options.optionAboutsitePhoto}"
                         alt="QR Code">
                     </div>
                     <div class="about-name">${options.optionAboutsiteTitle}</div>
@@ -161,7 +161,7 @@
                 <c:forEach items="${recentCommentList}" var="r">
                 <li style="border: none;">
                     <a href="/article/${r.articleCustom.articleId}/#anchor-comment-${r.commentCustom.commentId}" title="${r.articleCustom.articleTitle}" rel="external nofollow">
-                        <img alt=""src="${r.commentCustom.commentAuthorAvatar}" class="avatar avatar-64 photo" height="64" width="64">
+                        <img alt=""src="${r.commentCustom.commentAuthorPhoto}" class="avatar avatar-64 photo" height="64" width="64">
                         <span class="comment_author">
                             <strong>${r.commentCustom.commentAuthorName}</strong>
                         </span>

@@ -51,9 +51,9 @@
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">我的邮箱 </label>
+            <label class="layui-form-label">我的QQ </label>
             <div class="layui-input-block">
-                <input type="text" name="commentAuthorEmail"  value="${sessionScope.user.getUserEmail()}" class="layui-input">
+                <input type="text" name="commentAuthorQQ"  value="${sessionScope.user.getUserQQ()}" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">

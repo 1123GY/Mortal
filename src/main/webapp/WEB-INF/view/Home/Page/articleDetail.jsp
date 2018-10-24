@@ -190,7 +190,7 @@
 
                 <%--版权声明 start--%>
             <div class="authorbio wow fadeInUp" >
-                <img alt="${articleDetailVo.userCustom.userNickname}" src="${articleDetailVo.userCustom.userAvatar}"
+                <img alt="${articleDetailVo.userCustom.userNickname}" src="${articleDetailVo.userCustom.userPhoto}"
                      class="avatar avatar-64 photo" height="64" width="64">
                 <ul class="postinfo">
                     <li></li>
@@ -311,17 +311,17 @@
                     </h3>
                     <form id="comment_form" method="post">
                         <c:if test="${sessionScope.user!=null}">
-                            <div class="user_avatar">
-                                <img alt="言曌"
-                                     src="${sessionScope.user.userAvatar}"
+                            <div class="user_photo">
+                                <img alt="李晋江"
+                                     src="${sessionScope.user.userPhoto}"
                                      class="avatar avatar-64 photo" height="64" width="64">
                                 登录者：${sessionScope.user.userNickname}
                                 <br> <a href="javascript:void(0)" onclick="logout()">登出</a>
                                 <input type="hidden" name="commentRole" value="1">
                                 <input type="hidden" name="commentAuthorName"
                                        value="${sessionScope.user.getUserNickname()}">
-                                <input type="hidden" name="commentAuthorEmail"
-                                       value="${sessionScope.user.getUserEmail()}">
+                                <input type="hidden" name="commentAuthorQQ"
+                                       value="${sessionScope.user.getuserQQ()}">
                                 <input type="hidden" name="commentAuthorUrl" value="${sessionScope.user.getUserUrl()}">
                             </div>
                         </c:if>
@@ -344,7 +344,7 @@
                                     <label for="author_email">
                                         邮箱<span class="required">*</span>
                                     </label>
-                                    <input type="email" name="commentAuthorEmail" id="author_email" class="" value=""
+                                    <input type="email" name="commentAuthorQQ" id="author_email" class="" value=""
                                            tabindex="3" required>
                                 </p>
                                 <p class="comment-form-url">
@@ -375,7 +375,7 @@
                             <li class="comment">
                                 <div id="div-comment-${c.commentId}" class="comment-body">
                                     <div class="comment-author vcard">
-                                        <img class="avatar" src="${c.commentAuthorAvatar}" alt="avatar"
+                                        <img class="avatar" src="${c.commentAuthorPhoto}" alt="avatar"
                                              style="display: block;">
                                         <strong>${c.commentAuthorName} </strong>
                                         <c:if test="${c.commentRole==1}">
@@ -424,7 +424,7 @@
                                             <li class="comment">
                                                 <div id="div-comment-${c.commentId}" class="comment-body">
                                                     <div class="comment-author vcard">
-                                                        <img class="avatar" src="${c2.commentAuthorAvatar}" alt="avatar"
+                                                        <img class="avatar" src="${c2.commentAuthorPhoto}" alt="avatar"
                                                              style="display: block;">
                                                         <strong>${c2.commentAuthorName} </strong>
                                                         <c:if test="${c2.commentRole==1}">

@@ -52,7 +52,7 @@
             <div class="layui-input-inline">
                 <div class="layui-upload">
                     <div class="layui-upload-list" style="">
-                        <img class="layui-upload-img" src="${userCustom.userAvatar}" id="demo1" width="100"
+                        <img class="layui-upload-img" src="${userCustom.userPhoto}" id="demo1" width="100"
                              height="100">
                         <p id="demoText"></p>
                     </div>
@@ -70,7 +70,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">密码 </label>
             <div class="layui-input-inline">
-                <input type="password" value="${userCustom.userPass}" id="userPass" required
+                <input type="password" value="${userCustom.userPassword}" id="userPassword" required
                        autocomplete="off" class="layui-input" min="3" max="20" disabled>
             </div>
             <div class="layui-form-mid layui-word-aux"></div>
@@ -87,10 +87,10 @@
         <div class="layui-form-item">
             <label class="layui-form-label">Email </label>
             <div class="layui-input-inline">
-                <input type="email"  value="${userCustom.userEmail}" id="userEmail" required
+                <input type="email"  value="${userCustom.userQQ}" id="userQQ" required
                        class="layui-input" disabled>
             </div>
-            <div class="layui-form-mid layui-word-aux" id="userEmailTips"></div>
+            <div class="layui-form-mid layui-word-aux" id="userQQTips"></div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">URL </label>
@@ -126,7 +126,7 @@
             <label class="layui-form-label">状态 </label>
             <div class="layui-input-inline">
                 <input type="text"  value='<c:choose>
-                    <c:when test="${userCustom.userStatus==0}">禁用
+                    <c:when test="${userCustom.userRole==0}">禁用
                     </c:when>
                     <c:otherwise>正常
                     </c:otherwise>

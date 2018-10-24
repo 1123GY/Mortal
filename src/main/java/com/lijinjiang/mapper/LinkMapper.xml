@@ -5,18 +5,14 @@
     <id column="link_id" property="linkId" jdbcType="INTEGER" />
     <result column="link_url" property="linkUrl" jdbcType="VARCHAR" />
     <result column="link_name" property="linkName" jdbcType="VARCHAR" />
-    <result column="link_image" property="linkImage" jdbcType="VARCHAR" />
     <result column="link_description" property="linkDescription" jdbcType="VARCHAR" />
-    <result column="link_owner_nickname" property="linkOwnerNickname" jdbcType="VARCHAR" />
-    <result column="link_owner_contact" property="linkOwnerContact" jdbcType="VARCHAR" />
     <result column="link_update_time" property="linkUpdateTime" jdbcType="TIMESTAMP" />
     <result column="link_create_time" property="linkCreateTime" jdbcType="TIMESTAMP" />
     <result column="link_order" property="linkOrder" jdbcType="INTEGER" />
     <result column="link_status" property="linkStatus" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
-    link_id, link_url, link_name, link_image, link_description, link_owner_nickname, 
-    link_owner_contact, link_update_time, link_create_time, link_order, link_status
+    link_id, link_url, link_name, link_description, link_update_time, link_create_time, link_order, link_status
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -30,12 +26,10 @@
   </delete>
   <insert id="insert" parameterType="com.lijinjiang.entity.Link" >
     insert into link (link_id, link_url, link_name, 
-      link_image, link_description, link_owner_nickname, 
-      link_owner_contact, link_update_time, link_create_time, 
+     link_description,  link_update_time, link_create_time,
       link_order, link_status)
     values (#{linkId,jdbcType=INTEGER}, #{linkUrl,jdbcType=VARCHAR}, #{linkName,jdbcType=VARCHAR}, 
-      #{linkImage,jdbcType=VARCHAR}, #{linkDescription,jdbcType=VARCHAR}, #{linkOwnerNickname,jdbcType=VARCHAR}, 
-      #{linkOwnerContact,jdbcType=VARCHAR}, #{linkUpdateTime,jdbcType=TIMESTAMP}, #{linkCreateTime,jdbcType=TIMESTAMP}, 
+     #{linkDescription,jdbcType=VARCHAR}, #{linkUpdateTime,jdbcType=TIMESTAMP}, #{linkCreateTime,jdbcType=TIMESTAMP},
       #{linkOrder,jdbcType=INTEGER}, #{linkStatus,jdbcType=INTEGER})
   </insert>
   <insert id="insertSelective" parameterType="com.lijinjiang.entity.Link" >
@@ -50,17 +44,8 @@
       <if test="linkName != null" >
         link_name,
       </if>
-      <if test="linkImage != null" >
-        link_image,
-      </if>
       <if test="linkDescription != null" >
         link_description,
-      </if>
-      <if test="linkOwnerNickname != null" >
-        link_owner_nickname,
-      </if>
-      <if test="linkOwnerContact != null" >
-        link_owner_contact,
       </if>
       <if test="linkUpdateTime != null" >
         link_update_time,
@@ -85,17 +70,8 @@
       <if test="linkName != null" >
         #{linkName,jdbcType=VARCHAR},
       </if>
-      <if test="linkImage != null" >
-        #{linkImage,jdbcType=VARCHAR},
-      </if>
       <if test="linkDescription != null" >
         #{linkDescription,jdbcType=VARCHAR},
-      </if>
-      <if test="linkOwnerNickname != null" >
-        #{linkOwnerNickname,jdbcType=VARCHAR},
-      </if>
-      <if test="linkOwnerContact != null" >
-        #{linkOwnerContact,jdbcType=VARCHAR},
       </if>
       <if test="linkUpdateTime != null" >
         #{linkUpdateTime,jdbcType=TIMESTAMP},
@@ -120,17 +96,8 @@
       <if test="linkName != null" >
         link_name = #{linkName,jdbcType=VARCHAR},
       </if>
-      <if test="linkImage != null" >
-        link_image = #{linkImage,jdbcType=VARCHAR},
-      </if>
-      <if test="linkDescription != null" >
+     <if test="linkDescription != null" >
         link_description = #{linkDescription,jdbcType=VARCHAR},
-      </if>
-      <if test="linkOwnerNickname != null" >
-        link_owner_nickname = #{linkOwnerNickname,jdbcType=VARCHAR},
-      </if>
-      <if test="linkOwnerContact != null" >
-        link_owner_contact = #{linkOwnerContact,jdbcType=VARCHAR},
       </if>
       <if test="linkUpdateTime != null" >
         link_update_time = #{linkUpdateTime,jdbcType=TIMESTAMP},
@@ -151,10 +118,7 @@
     update link
     set link_url = #{linkUrl,jdbcType=VARCHAR},
       link_name = #{linkName,jdbcType=VARCHAR},
-      link_image = #{linkImage,jdbcType=VARCHAR},
       link_description = #{linkDescription,jdbcType=VARCHAR},
-      link_owner_nickname = #{linkOwnerNickname,jdbcType=VARCHAR},
-      link_owner_contact = #{linkOwnerContact,jdbcType=VARCHAR},
       link_update_time = #{linkUpdateTime,jdbcType=TIMESTAMP},
       link_create_time = #{linkCreateTime,jdbcType=TIMESTAMP},
       link_order = #{linkOrder,jdbcType=INTEGER},

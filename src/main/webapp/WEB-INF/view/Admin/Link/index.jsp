@@ -35,7 +35,6 @@
             <col width="100">
             <col width=50">
             <col width="100">
-            <col width="100">
             <col width="50">
             <col width="50">
             <col width="100">
@@ -45,7 +44,6 @@
         <tr>
             <th>名称</th>
             <th>URL</th>
-            <th>联系方式</th>
             <th>创建时间</th>
             <th>Order</th>
             <th>状态</th>
@@ -62,10 +60,7 @@
                 <td >
                     <a href="${l.linkUrl}" target="_blank">${l.linkUrl}</a>
                 </td>
-                <td>
-                    ${l.linkOwnerContact}
-                </td>
-                <td>
+               <td>
                       <fmt:formatDate value="${l.linkUpdateTime}" pattern="yyyy年MM月dd日"/>
                 </td>
                 <td>

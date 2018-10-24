@@ -9,13 +9,7 @@ public class Link {
 
     private String linkName;
 
-    private String linkImage;
-
     private String linkDescription;
-
-    private String linkOwnerNickname;
-
-    private String linkOwnerContact;
 
     private Date linkUpdateTime;
 
@@ -49,36 +43,12 @@ public class Link {
         this.linkName = linkName == null ? null : linkName.trim();
     }
 
-    public String getLinkImage() {
-        return linkImage;
-    }
-
-    public void setLinkImage(String linkImage) {
-        this.linkImage = linkImage == null ? null : linkImage.trim();
-    }
-
     public String getLinkDescription() {
         return linkDescription;
     }
 
     public void setLinkDescription(String linkDescription) {
         this.linkDescription = linkDescription == null ? null : linkDescription.trim();
-    }
-
-    public String getLinkOwnerNickname() {
-        return linkOwnerNickname;
-    }
-
-    public void setLinkOwnerNickname(String linkOwnerNickname) {
-        this.linkOwnerNickname = linkOwnerNickname == null ? null : linkOwnerNickname.trim();
-    }
-
-    public String getLinkOwnerContact() {
-        return linkOwnerContact;
-    }
-
-    public void setLinkOwnerContact(String linkOwnerContact) {
-        this.linkOwnerContact = linkOwnerContact == null ? null : linkOwnerContact.trim();
     }
 
     public Date getLinkUpdateTime() {

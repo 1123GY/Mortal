@@ -59,11 +59,6 @@
                     </div>
                     <br>
                     <div class="layui-input-block">
-                        分类描述
-                        <input type="text" name="categoryDescription" value="${categoryCustom.categoryDescription}"  class="layui-input" >
-                    </div>
-                    <br>
-                    <div class="layui-input-block">
                         图标样式
                         <input type="text" name="categoryIcon" value="${categoryCustom.categoryIcon}"class="layui-input" >
                     </div>

@@ -35,7 +35,7 @@
                 </c:when>
                 <c:otherwise>
                     <%--给一个默认值，这个地方很奇怪，本来不需要加的--%>
-                    <input type="hidden" name="optionId" value="1">
+                    <%--<input type="hidden" name="optionId" value="1">--%>
                 </c:otherwise>
             </c:choose>
 
@@ -71,12 +71,12 @@
                     <div class="layui-input-inline">
                         <div class="layui-upload">
                             <div class="layui-upload-list" style="">
-                                <img class="layui-upload-img" src="${optionCustom.optionAboutsiteAvatar}" id="demo1" width="100"
+                                <img class="layui-upload-img" src="${optionCustom.optionAboutsitePhoto}" id="demo1" width="100"
                                      height="100">
                                 <p id="demoText"></p>
                             </div>
                             <button type="button" class="layui-btn" id="test1">上传图片</button>
-                            <input type="hidden" id="optionAboutsiteAvatar" name="optionAboutsiteAvatar" value="${optionCustom.optionAboutsiteAvatar}">
+                            <input type="hidden" id="optionAboutsitePhoto" name="optionAboutsitePhoto" value="${optionCustom.optionAboutsitePhoto}">
                         </div>
                     </div>
                     <div class="layui-form-mid layui-word-aux">建议 150px*150px</div>
@@ -159,7 +159,7 @@
                     });
                 },
                 done: function (res) {
-                    $("#optionAboutsiteAvatar").attr("value", res.data.src);
+                    $("#optionAboutsitePhoto").attr("value", res.data.src);
                     if (res.code > 0) {
                         return layer.msg('上传失败');
                     }

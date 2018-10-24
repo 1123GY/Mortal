@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * 用于封装文章列表，包括文章信息，作者信息，分类信息，标签信息
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 public class ArticleListVo {
 	//文章信息

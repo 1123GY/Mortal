@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 言曌 on 2017/9/10.
+ * Created by 李晋江 on 2017/9/10.
  */
 public class CommentServiceImpl implements CommentService{
 	@Autowired
@@ -84,8 +84,8 @@ public class CommentServiceImpl implements CommentService{
 			//评论信息
             CommentCustom commentCustom = commentCustomList.get(i);
 			//评论者Gravatar头像
-            String avatar = Functions.getGravatar(commentCustom.getCommentAuthorEmail());
-            commentCustom.setCommentAuthorAvatar(avatar);
+            String avatar = Functions.getGravatar(commentCustom.getcommentAuthorQQ());
+            commentCustom.setcommentAuthorPhoto(avatar);
             commentListVo.setCommentCustom(commentCustomList.get(i));
 
 			commentListVoList.add(commentListVo);
@@ -114,8 +114,8 @@ public class CommentServiceImpl implements CommentService{
 			//评论信息
 			CommentCustom commentCustom = commentCustomList.get(i);
 			//评论者Gravatar头像
-			String avatar = Functions.getGravatar(commentCustom.getCommentAuthorEmail());
-			commentCustom.setCommentAuthorAvatar(avatar);
+			String avatar = Functions.getGravatar(commentCustom.getcommentAuthorQQ());
+			commentCustom.setcommentAuthorPhoto(avatar);
 			commentListVo.setCommentCustom(commentCustomList.get(i));
 
 			commentListVoList.add(commentListVo);
@@ -153,9 +153,9 @@ public class CommentServiceImpl implements CommentService{
 		for(int i=0;i<commentCustomList.size();i++) {
 			CommentListVo commentListVo = new CommentListVo();
 			//给每个评论用户添加头像
-			String avatar = Functions.getGravatar(commentCustomList.get(i).getCommentAuthorEmail());
+			String avatar = Functions.getGravatar(commentCustomList.get(i).getcommentAuthorQQ());
 			CommentCustom commentCustom = commentCustomList.get(i);
-			commentCustom.setCommentAuthorAvatar(avatar);
+			commentCustom.setcommentAuthorPhoto(avatar);
 			commentListVo.setCommentCustom(commentCustom);
 			//找到评论对应的文章信息
 			ArticleCustom articleCustom = articleMapperCustom.getArticleById(1,commentCustom.getCommentArticleId());

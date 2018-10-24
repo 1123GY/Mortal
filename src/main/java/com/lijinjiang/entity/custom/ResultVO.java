@@ -1,7 +1,7 @@
 package com.lijinjiang.entity.custom;
 
 /**
- * @author 言曌
+ * @author 李晋江
  * @date 2017/11/30 下午7:04
  */
 

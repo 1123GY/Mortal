@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * 用户管理
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 @Service
 public class UserServiceImpl implements UserService {

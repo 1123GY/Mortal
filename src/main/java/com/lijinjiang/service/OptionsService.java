@@ -5,7 +5,7 @@ import com.lijinjiang.entity.custom.OptionsCustom;
 
 
 /**
- * Created by 言曌 on 2017/9/7.
+ * Created by 李晋江 on 2017/9/7.
  */
 public interface OptionsService {
 	//获得基本信息

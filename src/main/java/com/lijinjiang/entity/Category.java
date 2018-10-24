@@ -7,10 +7,6 @@ public class Category {
 
     private String categoryName;
 
-    private String categoryDescription;
-
-    private Integer categoryOrder;
-
     private String categoryIcon;
 
     private Integer categoryStatus;
@@ -37,22 +33,6 @@ public class Category {
 
     public void setCategoryName(String categoryName) {
         this.categoryName = categoryName == null ? null : categoryName.trim();
-    }
-
-    public String getCategoryDescription() {
-        return categoryDescription;
-    }
-
-    public void setCategoryDescription(String categoryDescription) {
-        this.categoryDescription = categoryDescription == null ? null : categoryDescription.trim();
-    }
-
-    public Integer getCategoryOrder() {
-        return categoryOrder;
-    }
-
-    public void setCategoryOrder(Integer categoryOrder) {
-        this.categoryOrder = categoryOrder;
     }
 
     public String getCategoryIcon() {

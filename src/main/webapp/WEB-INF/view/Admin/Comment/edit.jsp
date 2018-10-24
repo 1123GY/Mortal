@@ -42,7 +42,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">邮箱 </label>
             <div class="layui-input-block">
-                <input type="text" name="commentAuthorEmail"  value="${commentCustom.commentAuthorEmail}" class="layui-input">
+                <input type="text" name="commentAuthorQQ"  value="${commentCustom.commentAuthorQQ}" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">

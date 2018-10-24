@@ -6,7 +6,7 @@ import com.lijinjiang.entity.custom.PageCustom;
 import java.util.List;
 
 /**
- * Created by 言曌 on 2017/9/7.
+ * Created by 李晋江 on 2017/9/7.
  */
 public interface PageService {
 	//获得页面列表

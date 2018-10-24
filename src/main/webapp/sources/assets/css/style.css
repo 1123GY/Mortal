@@ -3731,13 +3731,13 @@ img.alignleft {
     padding: 0 8px;
 }
 /** 表单头像 **/
-.user_avatar, .author_avatar {
+.user_photo, .author_avatar {
     height: 50px;
     line-height: 25px;
     margin: 0 0 15px 0;
 }
 
-.user_avatar img, .author_avatar img {
+.user_photo img, .author_avatar img {
     float: left;
     width: 48px;
     height: auto;

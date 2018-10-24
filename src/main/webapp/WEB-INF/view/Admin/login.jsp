@@ -81,8 +81,8 @@
                 <input type="text" name="username" id="user_login" class="input" value="<%=username%>" size="20" required/></label>
         </p>
         <p>
-            <label for="user_pass">密码<br />
-                <input type="password" name="password" id="user_pass" class="input" value="<%=password%>" size="20" required/>
+            <label for="user_password">密码<br />
+                <input type="password" name="password" id="user_password" class="input" value="<%=password%>" size="20" required/>
             </label>
         </p>
         <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="1" checked /> 记住密码</label></p>
@@ -121,7 +121,7 @@
     <%--登录验证--%>
     $("#submit-btn").click(function () {
         var user = $("#user_login").val();
-        var password = $("#user_pass").val();
+        var password = $("#user_password").val();
         if(user=="") {
             alert("用户名不可为空!");
         } else if(password==""){

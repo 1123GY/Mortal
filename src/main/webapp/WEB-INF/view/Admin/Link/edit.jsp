@@ -57,11 +57,6 @@
                     </div>
                     <br>
                     <div class="layui-input-block">
-                        联系方式
-                        <input type="text" name="linkOwnerContact" value="${linkCustom.linkOwnerContact}" autocomplete="off" class="layui-input" >
-                    </div>
-                    <br>
-                    <div class="layui-input-block">
                         描述
                         <input type="text" name="linkDescription" value="${linkCustom.linkDescription}" autocomplete="off" class="layui-input" >
                     </div>

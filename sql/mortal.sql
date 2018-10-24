@@ -214,7 +214,7 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `user_id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '用户ID',
   `user_name` varchar(255) NOT NULL DEFAULT '' COMMENT '用户名称',
-  `user_password` varchar(255) NOT NULL DEFAULT '' COMMENT '用户密码',
+  `user_passwordword` varchar(255) NOT NULL DEFAULT '' COMMENT '用户密码',
   `user_nickname` varchar(255) NOT NULL DEFAULT '' COMMENT '用户昵称',
   `user_qq` varchar(100) DEFAULT '' COMMENT '用户昵称',
   `user_url` varchar(100) DEFAULT '' COMMENT '用户网站',
@@ -225,7 +225,7 @@ CREATE TABLE `user` (
   `user_role` int(2) unsigned DEFAULT '0' COMMENT '1是管理员，0是游客',
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `user_name` (`user_name`),
-  UNIQUE KEY `user_email` (`user_qq`)
+  UNIQUE KEY `user_qq` (`user_qq`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------

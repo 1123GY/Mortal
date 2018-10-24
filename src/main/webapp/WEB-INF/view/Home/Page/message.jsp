@@ -96,8 +96,8 @@
                         return "用户名已存在";
                     }
                 },
-                userEmail: function () {
-                    if(checkUserEmail()==1) {
+                userQQ: function () {
+                    if(checkuserQQ()==1) {
                         return "电子邮箱已存在";
                     }
                 }

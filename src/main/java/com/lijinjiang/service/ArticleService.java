@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 public interface ArticleService {
 	//获取文章总数

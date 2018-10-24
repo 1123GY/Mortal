@@ -55,21 +55,21 @@
     <c:forEach items="${userCustomList}" var="u">
         <tr>
             <td>
-                 <img src="${u.userAvatar}" width="48" height="48">
+                 <img src="${u.userPhoto}" width="48" height="48">
                  <strong><a href="/admin/user/profile/${u.userId}">${u.userName}</a></strong>
             </td>
             <td>
                 ${u.userNickname}
             </td>
             <td >
-                ${u.userEmail}
+                ${u.userQQ}
             </td>
             <td>
                 ${u.articleCount}
             </td>
             <td>
                 <c:choose>
-                    <c:when test="${u.userStatus==0}">
+                    <c:when test="${u.userRole==0}">
                         <span style="color:#FF5722;">禁用</span>
                     </c:when>
                     <c:otherwise>

@@ -23,7 +23,7 @@ import java.util.List;
 
 /**
  * 用户管理
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 @Service
 public class ArticleServiceImpl implements ArticleService {
@@ -284,8 +284,8 @@ public class ArticleServiceImpl implements ArticleService {
 		List<CommentCustom> commentCustomList = commentMapperCustom.listCommentByArticleId(1,id);
 		//给每个评论用户添加头像
 		for(int i=0;i<commentCustomList.size();i++) {
-			String avatar = Functions.getGravatar(commentCustomList.get(i).getCommentAuthorEmail());
-			commentCustomList.get(i).setCommentAuthorAvatar(avatar);
+			String avatar = Functions.getGravatar(commentCustomList.get(i).getcommentAuthorQQ());
+			commentCustomList.get(i).setcommentAuthorPhoto(avatar);
 		}
 		articleDetailVo.setCommentCustomList(commentCustomList);
 

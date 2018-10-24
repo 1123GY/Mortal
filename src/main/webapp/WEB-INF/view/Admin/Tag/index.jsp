@@ -50,11 +50,6 @@
                     </div>
                     <br>
                     <div class="layui-input-block">
-                        标签描述
-                        <input type="text" name="tagDescription" placeholder="请输入标签描述" autocomplete="off" class="layui-input" >
-                    </div>
-                    <br>
-                    <div class="layui-input-block">
                         <button class="layui-btn" lay-filter="formDemo" type="submit">添加</button>
                     </div>
                 </div>

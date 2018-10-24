@@ -8,7 +8,7 @@
         comment_pname,
         comment_article_id,
         comment_author_name,
-        comment_author_email,
+        comment_author_qq,
         comment_author_url,
         comment_content,
         comment_agent,

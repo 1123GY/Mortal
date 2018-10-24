@@ -11,7 +11,7 @@ public class Options {
 
     private String optionMetaKeyword;
 
-    private String optionAboutsiteAvatar;
+    private String optionAboutsitePhoto;
 
     private String optionAboutsiteTitle;
 
@@ -24,10 +24,6 @@ public class Options {
     private String optionAboutsiteGithub;
 
     private String optionAboutsiteWeibo;
-
-    private String optionTongji;
-
-    private Integer optionStatus;
 
     public Integer getOptionId() {
         return optionId;
@@ -69,12 +65,12 @@ public class Options {
         this.optionMetaKeyword = optionMetaKeyword == null ? null : optionMetaKeyword.trim();
     }
 
-    public String getOptionAboutsiteAvatar() {
-        return optionAboutsiteAvatar;
+    public String getoptionAboutsitePhoto() {
+        return optionAboutsitePhoto;
     }
 
-    public void setOptionAboutsiteAvatar(String optionAboutsiteAvatar) {
-        this.optionAboutsiteAvatar = optionAboutsiteAvatar == null ? null : optionAboutsiteAvatar.trim();
+    public void setoptionAboutsitePhoto(String optionAboutsitePhoto) {
+        this.optionAboutsitePhoto = optionAboutsitePhoto == null ? null : optionAboutsitePhoto.trim();
     }
 
     public String getOptionAboutsiteTitle() {
@@ -125,19 +121,4 @@ public class Options {
         this.optionAboutsiteWeibo = optionAboutsiteWeibo == null ? null : optionAboutsiteWeibo.trim();
     }
 
-    public String getOptionTongji() {
-        return optionTongji;
-    }
-
-    public void setOptionTongji(String optionTongji) {
-        this.optionTongji = optionTongji == null ? null : optionTongji.trim();
-    }
-
-    public Integer getOptionStatus() {
-        return optionStatus;
-    }
-
-    public void setOptionStatus(Integer optionStatus) {
-        this.optionStatus = optionStatus;
-    }
 }

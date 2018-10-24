@@ -13,7 +13,7 @@ public class Comment {
 
     private String commentAuthorName;
 
-    private String commentAuthorEmail;
+    private String commentAuthorQQ;
 
     private String commentAuthorUrl;
 
@@ -69,12 +69,12 @@ public class Comment {
         this.commentAuthorName = commentAuthorName == null ? null : commentAuthorName.trim();
     }
 
-    public String getCommentAuthorEmail() {
-        return commentAuthorEmail;
+    public String getcommentAuthorQQ() {
+        return commentAuthorQQ;
     }
 
-    public void setCommentAuthorEmail(String commentAuthorEmail) {
-        this.commentAuthorEmail = commentAuthorEmail == null ? null : commentAuthorEmail.trim();
+    public void setcommentAuthorQQ(String commentAuthorQQ) {
+        this.commentAuthorQQ = commentAuthorQQ == null ? null : commentAuthorQQ.trim();
     }
 
     public String getCommentAuthorUrl() {

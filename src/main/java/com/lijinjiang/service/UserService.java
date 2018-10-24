@@ -6,7 +6,7 @@ import com.lijinjiang.entity.custom.UserCustom;
 import java.util.List;
 
 /**
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 public interface UserService {
 	public List<UserCustom> listUser() throws Exception;

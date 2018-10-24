@@ -66,9 +66,9 @@ public class BackUserController {
         return result;
     }
 
-    @RequestMapping(value = "/checkUserEmail",method = RequestMethod.POST)
+    @RequestMapping(value = "/checkuserQQ",method = RequestMethod.POST)
     @ResponseBody
-    public String checkUserEmail(HttpServletRequest request) throws Exception {
+    public String checkuserQQ(HttpServletRequest request) throws Exception {
         Map<String, Object> map = new HashMap<String, Object>();
         String email = request.getParameter("email");
         User user = userService.getUserByEmail(email);
@@ -92,10 +92,10 @@ public class BackUserController {
     @RequestMapping(value = "/insertSubmit",method = RequestMethod.POST)
     public String insertUserSubmit(User user) throws Exception {
         User user2 = userService.getUserByName(user.getUserName());
-        User user3 = userService.getUserByEmail(user.getUserEmail());
+        User user3 = userService.getUserByEmail(user.getuserQQ());
         if(user2==null&&user3==null) {
             user.setUserRegisterTime(new Date());
-            user.setUserStatus(1);
+            user.setuserRole(1);
             userService.insertUser(user);
         }
         return "redirect:/admin/user";

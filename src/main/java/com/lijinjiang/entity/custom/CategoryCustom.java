@@ -5,7 +5,7 @@ import com.lijinjiang.entity.Category;
 
 /**
  * 文章分类目录的信息的扩展
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 public class CategoryCustom extends Category {
     //分类对应的文章数

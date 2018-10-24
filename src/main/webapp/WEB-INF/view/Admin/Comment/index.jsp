@@ -56,14 +56,14 @@
                     <c:forEach items="${commentListVoList}" var="c">
                         <tr>
                             <td>
-                                <img src="${c.commentCustom.commentAuthorAvatar}" alt="" width="64px">
+                                <img src="${c.commentCustom.commentAuthorPhoto}" alt="" width="64px">
                                 <strong>${c.commentCustom.commentAuthorName}</strong>
                                 <c:if test="${c.commentCustom.commentStatus==0}">
                                     <span class="approve">[待审]</span>
                                 </c:if>
                                 <br>
                                     ${c.commentCustom.commentAuthorUrl} <br>
-                                    ${c.commentCustom.commentAuthorEmail} <br>
+                                    ${c.commentCustom.commentAuthorQQ} <br>
                                     ${c.commentCustom.commentIp}
                             </td>
                             <td class="dashboard-comment-wrap">
@@ -215,10 +215,10 @@
                     <c:forEach items="${hiddenCommentListVoList}" var="c">
                         <tr>
                             <td>
-                                <img src="${c.commentCustom.commentAuthorAvatar}" alt="" width="64px">
+                                <img src="${c.commentCustom.commentAuthorPhoto}" alt="" width="64px">
                                 <strong>${c.commentCustom.commentAuthorName}</strong> <br>
                                     ${c.commentCustom.commentAuthorUrl} <br>
-                                    ${c.commentCustom.commentAuthorEmail} <br>
+                                    ${c.commentCustom.commentAuthorQQ} <br>
                                     ${c.commentCustom.commentIp}
                             </td>
                             <td class="dashboard-comment-wrap">

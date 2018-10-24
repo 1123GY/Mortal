@@ -4,7 +4,7 @@ import com.lijinjiang.entity.Tag;
 
 /**
  * 文章标签的信息的扩展
- * Created by 言曌 on 2017/9/1.
+ * Created by 李晋江 on 2017/9/1.
  */
 public class TagCustom extends Tag {
 	//标签对应的文章数目

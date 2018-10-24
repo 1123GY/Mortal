@@ -7,15 +7,15 @@ public class User {
 
     private String userName;
 
-    private String userPass;
+    private String userPassword;
 
     private String userNickname;
 
-    private String userEmail;
+    private String userQQ;
 
     private String userUrl;
 
-    private String userAvatar;
+    private String userPhoto;
 
     private String userLastLoginIp;
 
@@ -23,7 +23,7 @@ public class User {
 
     private Date userLastLoginTime;
 
-    private Integer userStatus;
+    private Integer userRole;
 
     public Integer getUserId() {
         return userId;
@@ -41,12 +41,12 @@ public class User {
         this.userName = userName == null ? null : userName.trim();
     }
 
-    public String getUserPass() {
-        return userPass;
+    public String getuserPassword() {
+        return userPassword;
     }
 
-    public void setUserPass(String userPass) {
-        this.userPass = userPass == null ? null : userPass.trim();
+    public void setuserPassword(String userPassword) {
+        this.userPassword = userPassword == null ? null : userPassword.trim();
     }
 
     public String getUserNickname() {
@@ -57,12 +57,12 @@ public class User {
         this.userNickname = userNickname == null ? null : userNickname.trim();
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public String getuserQQ() {
+        return userQQ;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail == null ? null : userEmail.trim();
+    public void setuserQQ(String userQQ) {
+        this.userQQ = userQQ == null ? null : userQQ.trim();
     }
 
     public String getUserUrl() {
@@ -73,12 +73,12 @@ public class User {
         this.userUrl = userUrl == null ? null : userUrl.trim();
     }
 
-    public String getUserAvatar() {
-        return userAvatar;
+    public String getuserPhoto() {
+        return userPhoto;
     }
 
-    public void setUserAvatar(String userAvatar) {
-        this.userAvatar = userAvatar == null ? null : userAvatar.trim();
+    public void setuserPhoto(String userPhoto) {
+        this.userPhoto = userPhoto == null ? null : userPhoto.trim();
     }
 
     public String getUserLastLoginIp() {
@@ -105,11 +105,11 @@ public class User {
         this.userLastLoginTime = userLastLoginTime;
     }
 
-    public Integer getUserStatus() {
-        return userStatus;
+    public Integer getuserRole() {
+        return userRole;
     }
 
-    public void setUserStatus(Integer userStatus) {
-        this.userStatus = userStatus;
+    public void setuserRole(Integer userRole) {
+        this.userRole = userRole;
     }
 }

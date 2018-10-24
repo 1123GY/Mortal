@@ -5,15 +5,15 @@
     <sql id="user_table_all_columns">
         user_id,
         user_name,
-        user_pass,
+        user_password,
         user_nickname,
-        user_email,
+        user_qq,
         user_url,
-        user_avatar,
+        user_photo,
         user_last_login_ip,
         user_register_time,
         user_last_login_time,
-        user_status
+        user_role
     </sql>
 
     <!--用户列表查询-->
@@ -22,7 +22,7 @@
         SELECT
         <include refid="user_table_all_columns"/>
         FROM `user`
-        ORDER BY `user_status` ASC
+        ORDER BY `user_role` ASC
     </select>
 
     <!--根据用户名或邮箱获得用户-->
@@ -32,9 +32,9 @@
         FROM
         `user`
         <where>
-            user_name=#{value} OR user_email=#{value}
+            user_name=#{value} OR user_qq=#{value}
         </where>
-        AND user_status>0
+        AND user_role>0
         limit 1
     </select>
 
@@ -57,7 +57,7 @@
         FROM
         `user`
         <where>
-            user_email=#{value}
+            user_qq=#{value}
         </where>
         limit 1
     </select>

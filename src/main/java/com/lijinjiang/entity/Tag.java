@@ -5,8 +5,6 @@ public class Tag {
 
     private String tagName;
 
-    private String tagDescription;
-
     private Integer tagStatus;
 
     public Integer getTagId() {
@@ -23,14 +21,6 @@ public class Tag {
 
     public void setTagName(String tagName) {
         this.tagName = tagName == null ? null : tagName.trim();
-    }
-
-    public String getTagDescription() {
-        return tagDescription;
-    }
-
-    public void setTagDescription(String tagDescription) {
-        this.tagDescription = tagDescription == null ? null : tagDescription.trim();
     }
 
     public Integer getTagStatus() {

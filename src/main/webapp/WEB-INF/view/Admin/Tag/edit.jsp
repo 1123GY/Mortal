@@ -51,10 +51,6 @@
                         <input type="text" name="tagName" value="${tagCustom.tagName}" autocomplete="off" class="layui-input" required>
                     </div>
                     <br>
-                    <div class="layui-input-block">
-                        标签描述
-                        <input type="text" name="tagDescription" value="${tagCustom.tagDescription}" autocomplete="off" class="layui-input" >
-                    </div>
                     <br>
                     <div class="layui-input-block">
                         状态 <br>

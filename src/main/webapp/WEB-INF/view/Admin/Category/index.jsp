@@ -63,11 +63,6 @@
                     </div>
                     <br>
                     <div class="layui-input-block">
-                        分类描述
-                        <input type="text" name="categoryDescription" placeholder="请输入分类描述" autocomplete="off" class="layui-input" >
-                    </div>
-                    <br>
-                    <div class="layui-input-block">
                         图标样式
                         <input type="text" name="categoryIcon" placeholder="请输入图标样式,如 fa fa-coffee" autocomplete="off" class="layui-input" >
                     </div>

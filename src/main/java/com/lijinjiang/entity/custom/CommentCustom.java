@@ -3,17 +3,17 @@ package com.lijinjiang.entity.custom;
 import com.lijinjiang.entity.Comment;
 
 /**
- * Created by 言曌 on 2017/9/10.
+ * Created by 李晋江 on 2017/9/10.
  */
 public class CommentCustom extends Comment {
     //评论者的头像
-    private String commentAuthorAvatar;
+    private String commentAuthorPhoto;
 
-    public String getCommentAuthorAvatar() {
-        return commentAuthorAvatar;
+    public String getcommentAuthorPhoto() {
+        return commentAuthorPhoto;
     }
 
-    public void setCommentAuthorAvatar(String commentAuthorAvatar) {
-        this.commentAuthorAvatar = commentAuthorAvatar;
+    public void setcommentAuthorPhoto(String commentAuthorPhoto) {
+        this.commentAuthorPhoto = commentAuthorPhoto;
     }
 }

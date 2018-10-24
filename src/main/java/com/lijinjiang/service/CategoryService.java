@@ -9,7 +9,7 @@ import com.lijinjiang.entity.custom.CategoryCustom;
 import java.util.List;
 
 /**
- * Created by 言曌 on 2017/8/24.
+ * Created by 李晋江 on 2017/8/24.
  */
 public interface CategoryService {
 	//获得分类总数

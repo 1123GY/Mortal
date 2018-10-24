@@ -45,7 +45,7 @@
                     <button type="button" class="layui-btn" id="test1">上传图片</button>
                 </div>
             </div>
-            <input type="hidden" name="userAvatar" id="userAvatar" value="">
+            <input type="hidden" name="userPhoto" id="userPhoto" value="">
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">用户名 <span style="color: #FF5722; ">*</span></label>
@@ -59,8 +59,8 @@
         <div class="layui-form-item">
             <label class="layui-form-label">密码 <span style="color: #FF5722; ">*</span></label>
             <div class="layui-input-inline">
-                <input type="password" name="userPass"  id="userPass" required
-                       lay-verify="userPass"
+                <input type="password" name="userPassword"  id="userPassword" required
+                       lay-verify="userPassword"
                        autocomplete="off" class="layui-input" min="3" max="20">
             </div>
             <div class="layui-form-mid layui-word-aux"></div>
@@ -77,11 +77,11 @@
         <div class="layui-form-item">
             <label class="layui-form-label">Email <span style="color: #FF5722; ">*</span></label>
             <div class="layui-input-inline">
-                <input type="email" name="userEmail" id="userEmail" required
-                       lay-verify="userEmail"
-                       class="layui-input" onblur="checkUserEmail()">
+                <input type="email" name="userQQ" id="userQQ" required
+                       lay-verify="userQQ"
+                       class="layui-input" onblur="checkuserQQ()">
             </div>
-            <div class="layui-form-mid layui-word-aux" id="userEmailTips"></div>
+            <div class="layui-form-mid layui-word-aux" id="userQQTips"></div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label">URL </label>
@@ -116,7 +116,7 @@
                     });
                 },
                 done: function (res) {
-                    $("#userAvatar").attr("value", res.data.src);
+                    $("#userPhoto").attr("value", res.data.src);
                     if (res.code > 0) {
                         return layer.msg('上传失败');
                     }
